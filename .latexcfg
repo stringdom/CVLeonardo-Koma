@@ -1,0 +1,4 @@
+{
+"root" : "CV-Leonardo.tex",
+"toolchain" : "xelatex %ARG %DOC"
+}
