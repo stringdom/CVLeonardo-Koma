@@ -1,2 +1,5 @@
 *.gz
 *.aux
+*.log
+*.tuc
+*.png
