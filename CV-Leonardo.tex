@@ -1,7 +1,16 @@
 % Implementación de un CV en el formato de KOMA-description
-% 18/12/2018 Primera versión
+
+% Fecha de inicio y salida.
+% Nombre de la compañía.
+% Cargo
+% Descripción de cargo. (Al menos 5 bullets)
+%
+% Estudios
+%
+% Softwares
 
 \documentclass[xcolor=svgnames,color=DarkSlateGray]{komacv}
+% \usepackage{fontawesome5}
 
 \renewcommand*\title{CV Leonardo Pérez 2020}
 \renewcommand*\acadtitle{Licenciado en Psicología Social}
@@ -9,10 +18,16 @@
 \renewcommand*\familyname{Pérez Martínez}
 \renewcommand*\mobile{+58 416 427 28 80}
 \renewcommand*\phonenr{+58 212 472 79 82}
+\renewcommand*\extrainfo{\faSkype \link[Stringdom42]{https://join.skype.com/invite/xzSFqvGk6nBK}}
 \renewcommand*\email{leo.prez.k@gmail.com}
+\renewcommand*\linkedin{\link[psic-leonardo-pérez]{www.linkedin.com/in/psic-leonardo-pérez}}
 \renewcommand*\addressstreet{Av.~Intercomunal de Antímano con Calle~El~Carmen}
 \renewcommand*\addresscity{Caracas, Municipio Libertador}
 \photo[mframe]{0.2\textwidth}{foto.jpg}
+
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\ofoot{\pagemark/\totalpagemark}
 
 \begin{document}
 \maketitle
@@ -20,41 +35,85 @@
 \section{Información profesional}
 \subsection{Perfil}
 \raggedright
-    Psicólogo social con conocimiento avanzado de informática. Diseñador y coordinador de proyectos de incidencia social. Redactor y editor de textos técnicos, manuales, y contenido instruccional y promocional para redes sociales. Orador experimentado. Facilitador de grupos y talleres con conocimiento en evaluación basada en competencias. Especialista en educación, y salud sexual y reproductiva.
-\subsection{Habilidades}
-\raggedright
-    Experiencia en diseño e implementación de proyectos. Planificacion, diseño curricular, monitoreo de indicadores de desempeño, control y ejecución de presupuestos, reporte financiero y narrativo de resultados. Manejo, formación y facilitación de grupos. Capacidad para gestión, organización, supervisión, y manejo de personal y equipos de trabajo, así como de grupos de advocacy.
-
-\section{Educación}
-    \cventry{2018}{Psicología mención Psicología Social}{UCV}{}{Licenciado}{}
-    \cventry{2005}{Bachiller en Ciencias}{U.E.N. Rafael Seijas}{}{}{}
-
-\subsection{Idiomas}
-    \cvitem{Español}{Lengua materna.}
-    \cvitem{Inglés}{Fluidez en lectura, escritura y conversación.}
+    Psicólogo social con conocimiento avanzado de informática. Diseñador y coordinador de proyectos de incidencia social. Redactor y editor de textos técnicos, manuales, y contenido instruccional y promocional para redes sociales. Orador experimentado. Facilitador de grupos y talleres con conocimiento en evaluación basada en competencias. Especialista en educación, derechos, y salud sexual y reproductiva.
+% \subsection{Habilidades}
+% \raggedright
+%     Experiencia en diseño e implementación de proyectos. Planificacion, diseño curricular, monitoreo de indicadores de desempeño, control y ejecución de presupuestos, reporte financiero y narrativo de resultados. Manejo, formación y facilitación de grupos. Capacidad para gestión, organización, supervisión, y manejo de personal y equipos de trabajo, así como de grupos de advocacy.
 
 \section{Experiencia Laboral}
-\subsection{Coordinación de proyectos}
-    \cvitem{2020}{Esperanza: Programa de formación de prestadores de servicios de salud en salud sexual y reproductiva.}
+    % \subsection{Empleos}
+        \cventry{Nov, 2019-Presente}{CEX/CIES}{Miembro del comité técnico del centro de excelencia latinoamericano en educación integral en sexualidad}{}{}{}
+        \cvlistitem{Validación de los contenidos educativos del curso online de Educación Integral en Sexualidad para prestadores de servicios de planificación familiar.}
+        \cvlistitem{Creación y selección de una caja de herramientas para la EIS.}
+        \cvlistitem{Coordinar la implementación del proyecto de participación y liderazgo juvenil.}
+        \cvlistitem{Realizar consultoría a los miembros del centro de excelencia en temas de salud y derechos sexuales y reproductivos.}
+        \cvlistitem{Participar en las reuniones remotas del comité técnico.}
+
+        \newpage
+
+        \cventry{Sept, 2017-Actual}{PLAFAM,~A.C}{Especialista del programa de jóvenes y adolescentes}{}{}{}
+        \cvlistitem{Ejecución de proyectos sociales para la participación de jóvenes y adolescentes en iniciativas de promoción de la EIS, planificación familiar y empoderamiento en los derechos sexuales y reproductivos.}
+        \cvlistitem{Dirección y coordinación del grupo de voluntariado Plafam Juvenil.}
+        \cvlistitem{Promover y coordinar la participación de los jóvenes dentro y fuera de la institución.}
+        \cvlistitem{Realizar alianzas con instituciones hermanas, centros educativos, grupos juveniles, instituciones comunitarias públicas y privadas.}
+        \cvlistitem{Coordinar y ejecutar actividades formativas para personas con incidencia en jóvenes, como docentes, representantes, médicos, enfermeras, líderes juveniles y otros adultos significativos.}
+
+        \cventry{Feb-Ago, 2017}{teleSUR, La nueva televisión del sur,~C.A}{Redactor Web}{}{}{}
+        \cvlistitem{Redaccion de artículos de investigación sobre eventos históricos.}
+        \cvlistitem{Redacción de contenidos para la página web del canal.}
+        \cvlistitem{Resumen de acontecimientos noticiosos.}
+        \cvlistitem{Elaboración de notas informativas sobre entrevistas.}
+        \cvlistitem{Creación de notas promocionales para la programación del canal.}
+
+        \cventry{2015-2016}{Kavanayentech~C.A.}{Consultor de tecnología en implementación de APIA~Documentum}{}{}{}
+        \cvlistitem{Consultoría psicológica en adopcion de tecnologías de la información en la administración pública.}
+        \cvlistitem{Consultoría y supervisión del equipo de implementación del paquete informático APIA~Documentum.}
+        \cvlistitem{Elaboración y ejecución de talleres de entrenamiento al personal en el uso de tecnologías para trámites administrativos.}
+        \cvlistitem{Elaboración y ejecución de un plan de adopción de la tecnología APIA~Documentum para el personal de administración pública.}
+        \cvlistitem{Creación y aplicación de instrumentos de evaluación de la adopción de nuevas tecnologías.}
+
+        \cventry{2010-2015}{IBM de Venezuela~C.A.}{Operador de ‘Centro de innovación de negocios’}{}{}{}
+        \cvlistitem{Monitoreo de los procesos informáticos de la plataforma interbancaria nacional.}
+        \cvlistitem{Registro y seguimiento de incidencias y eventos de la plataforma.}
+        \cvlistitem{Ejecución de procesos informáticos de rutina y mantenimiento.}
+        \cvlistitem{Ejecución de tareas de rutina en los equipos informáticos del datacenter.}
+        \cvlistitem{Asistencia al personal desarrollador de software y al equipo técnico de mantenimiento del datacenter.}
+
+        \cventry{2010-2011}{The Adecco Group Venezuela—Banco Mercantil}{Analista de help-desk}{}{}{}
+        \cvlistitem{Soporte técnico informático para el personal administrativo del Banco Mercantil.}
+        \cvlistitem{Recepcion de llamadas de soporte.}
+        \cvlistitem{Seguimiento a eventos de soporte técnico.}
+        \cvlistitem{Asistencia en la ejecución de procesos informáticos administrativos.}
+        \cvlistitem{Soporte remoto de incidencias informáticas.}
+
+\section{Educación}
+    \cventry{2018}{Psicología mención Psicología Social}{Universidad Central de Venezuela}{}{Licenciado}{}
+    \cventry{2005}{Bachiller en Ciencias}{U.E.N. Rafael Seijas}{}{}{}
+
+    \subsection{Software}
+        \cvitem{Microsoft Office}{Manejo avanzado de Word, Excel, PowerPoint, y Project. Conocimientos básicos de Access.}
+        \cvitem{RStudio}{Análisis de datos estadísticos básicos con el paquete Tidyverse en el lenguaje de análisis R.}
+        \cvitem{Git}{Gestión avanzada de control de versiones y trabajo colaborativo en la nube.}
+        \cvitem{\LaTeX Typesetting software}{Elaboración avanzada y automatizada de documentos de alta calidad tipográfica.}
+
+    \subsection{Idiomas}
+        \cvitem{Español}{Lengua materna.}
+        \cvitem{Inglés}{Fluidez en lectura, escritura y conversación.}
+
+\newpage
+
+\section{Coordinación de proyectos}
+    \cvitem{2020}{Esperanza: Programa de formación de prestadores de servicios de salud en derechos y salud, sexual y reproductiva.}
     \cvitem{2018-2020}{Desarrollo de un modelo integral para la prevención y atención del sindrome por virus Zika en Venezuela: un enforque desde la salud sexual y reproductiva.}
     \cvitem{2017-2018}{Háblalo: Visibilización y abordaje del estigma contra el aborto en Venezuela mediante mensajes adiovisuales.}
     \cvitem{2016-2017}{Cero prejuicios, PLAFAM habla contigo: avance de la educación integral en sexualidad en liceos de Caracas, Venezuela.}
-
-\subsection{Empleos}
-    \cventry{2019-Presente}{Miembro del comité técnico del centro de excelencia latinoamericano en educación integral en sexualidad}{CEX/CIES}{}{}{}
-    \cventry{2017-Actual}{Especialista del programa de jóvenes y adolescentes}{PLAFAM,~A.C}{}{}{}
-    \cventry{2017}{Redactor Web}{teleSUR, La nueva televisión del sur,~C.A}{}{}{}
-    \cventry{2015-2016}{Consultor de tecnología en implementación de APIA~Documentum}{Kavanayentech}{}{}{}
-    \cventry{2013-2015}{Operador de ‘Centro de innovación de negocios’}{IBM de Venezuela}{}{}{}
-    \cventry{2010-2013}{Operador de ‘Centro de innovación de negocios’}{e-Power Outsourcing,~S.A.—IBM}{}{}{}
-    \cventry{2010-2011}{Analista de help-desk}{The Adecco Group Venezuela—Banco Mercantil}{}{}{}
-    \cventry{2006-2007}{Analista de resultados}{Emevenca Venezuela}{}{}{}
+    \cvitem{2015-2016}{APIA~Documentum: Prueba piloto para la digitalización de procesos de legalización de documentos con énfasis en ‘cero papel’ en el Registro Principal de Caracas del SAREN.}
 
 \section{Referencias laborales}
         \begin{compactdesc}
                 \item{Nelmary Diaz — }{\em Gerente de programas, PLAFAM, A.C.}
                 \item{\bfseries Email:} \emaillink{ndiaz@plafam.org.ve}
-                \item{\bfseries Teléfono:} 0412 954 9116 / 0212 634 0177
+                \item{\bfseries Teléfono:} +58 412 954 9116 / +58 212 634 0177
         \end{compactdesc}
 
 \medskip
