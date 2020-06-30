@@ -3,5 +3,6 @@
 *.log
 *.tuc
 *.png
-CV-Leonardo Pérez-2020.pdf
+*.pdf
 *.docx
+.TMP

@@ -1,29 +1,11 @@
 % Implementación de un CV en el formato de KOMA-description
-
-% Fecha de inicio y salida.
-% Nombre de la compañía.
-% Cargo
-% Descripción de cargo. (Al menos 5 bullets)
-%
-% Estudios
-%
-% Softwares
-
-\documentclass[xcolor=svgnames,color=DarkSlateGray]{komacv}
-% \usepackage{fontawesome5}
-
-\renewcommand*\title{CV Leonardo Pérez 2020}
-\renewcommand*\acadtitle{Licenciado en Psicología Social}
-\renewcommand*\firstname{Leonardo Rafael\\}
-\renewcommand*\familyname{Pérez Martínez}
-\renewcommand*\mobile{+58 416 427 28 80}
-\renewcommand*\phonenr{+58 212 472 79 82}
-\renewcommand*\extrainfo{\faSkype \link[Stringdom42]{https://join.skype.com/invite/xzSFqvGk6nBK}}
-\renewcommand*\email{leo.prez.k@gmail.com}
-\renewcommand*\linkedin{\link[psic-leonardo-pérez]{www.linkedin.com/in/psic-leonardo-pérez}}
-\renewcommand*\addressstreet{Av.~Intercomunal de Antímano con Calle~El~Carmen}
-\renewcommand*\addresscity{Caracas, Municipio Libertador}
+\documentclass[xcolor=svgnames,color=DarkSlateGray,draft=false]{komacv}
+\usepackage{komacv-addons, komacv-lco, fontspec}
+\KOMAoptions{fromemail=true, fromextrainfo=true, fromlinkedin=true, frommobilephone=true, fromphone=true}
+\LoadLetterOption{leonardo}
 \photo[mframe]{0.2\textwidth}{foto.jpg}
+
+\setsansfont{Helvetica Neue}
 
 \pagestyle{scrheadings}
 \clearscrheadfoot
@@ -35,37 +17,43 @@
 \section{Información profesional}
 \subsection{Perfil}
 \raggedright
-    Psicólogo social con conocimiento avanzado de informática. Diseñador y coordinador de proyectos de incidencia social. Redactor y editor de textos técnicos, manuales, y contenido instruccional y promocional para redes sociales. Orador experimentado. Facilitador de grupos y talleres con conocimiento en evaluación basada en competencias. Especialista en educación, derechos, y salud sexual y reproductiva.
+    Psicólogo social con conocimiento avanzado de informática. Diseñador y gestor de proyectos de incidencia social. Redactor y editor de textos técnicos, manuales, y contenido instruccional y promocional para redes sociales. Orador experimentado. Facilitador de grupos y talleres con conocimiento en evaluación basada en competencias. Especialista en educación, derechos, y salud sexual y reproductiva.
 % \subsection{Habilidades}
 % \raggedright
 %     Experiencia en diseño e implementación de proyectos. Planificacion, diseño curricular, monitoreo de indicadores de desempeño, control y ejecución de presupuestos, reporte financiero y narrativo de resultados. Manejo, formación y facilitación de grupos. Capacidad para gestión, organización, supervisión, y manejo de personal y equipos de trabajo, así como de grupos de advocacy.
 
 \section{Experiencia Laboral}
     % \subsection{Empleos}
-        \cventry{Nov, 2019-Presente}{CEX/CIES}{Miembro del comité técnico del centro de excelencia latinoamericano en educación integral en sexualidad}{}{}{}
+        \cventry{Nov,~2019-Presente}{CEX/CIES}{Miembro del comité técnico del centro de excelencia latinoamericano en educación integral en sexualidad}{}{}{}
         \cvlistitem{Validación de los contenidos educativos del curso online de Educación Integral en Sexualidad para prestadores de servicios de planificación familiar.}
-        \cvlistitem{Creación y selección de una caja de herramientas para la EIS.}
+        \cvlistitem{Selección de una caja de herramientas para la EIS garantizando calidad del contenido.}
         \cvlistitem{Coordinar la implementación del proyecto de participación y liderazgo juvenil.}
         \cvlistitem{Realizar consultoría a los miembros del centro de excelencia en temas de salud y derechos sexuales y reproductivos.}
         \cvlistitem{Participar en las reuniones remotas del comité técnico.}
 
         \newpage
 
-        \cventry{Sept, 2017-Actual}{PLAFAM,~A.C}{Especialista del programa de jóvenes y adolescentes}{}{}{}
-        \cvlistitem{Ejecución de proyectos sociales para la participación de jóvenes y adolescentes en iniciativas de promoción de la EIS, planificación familiar y empoderamiento en los derechos sexuales y reproductivos.}
-        \cvlistitem{Dirección y coordinación del grupo de voluntariado Plafam Juvenil.}
-        \cvlistitem{Promover y coordinar la participación de los jóvenes dentro y fuera de la institución.}
-        \cvlistitem{Realizar alianzas con instituciones hermanas, centros educativos, grupos juveniles, instituciones comunitarias públicas y privadas.}
-        \cvlistitem{Coordinar y ejecutar actividades formativas para personas con incidencia en jóvenes, como docentes, representantes, médicos, enfermeras, líderes juveniles y otros adultos significativos.}
+        \cventry{Sept,~2017-Actual}{PLAFAM,~A.C}{Especialista del programa de jóvenes y adolescentes}{}{}{}
+        \cvlistitem{Gestión de proyectos sociales para la participación de jóvenes y adolescentes en iniciativas de promoción de la EIS, planificación familiar y empoderamiento en los derechos sexuales y reproductivos, incluyendo reporte programático y seguimiento presupuestario.}
+        \cvlistitem{Liderazgo y coordinación del grupo de voluntariado Plafam Juvenil.}
+        \cvlistitem{Promoción de la participación de los jóvenes dentro y fuera de la institución.}
+        \cvlistitem{Gestión de alianzas con instituciones hermanas, centros educativos, grupos juveniles, instituciones comunitarias públicas y privadas.}
+        \cvlistitem{Ejecución de actividades formativas para personas con incidencia en jóvenes, como docentes, representantes, médicos, enfermeras, líderes juveniles y otros adultos significativos.}
 
-        \cventry{Feb-Ago, 2017}{teleSUR, La nueva televisión del sur,~C.A}{Redactor Web}{}{}{}
+        % Social projects implementation in youth and adolescents participation. Promotion of comprehensive sex education, family planning and empowerment on sexual and reproductive health and rights.
+        % Organization of youth volunteer group Plafam Juvenil.
+        % Promoting and organizing youth participation inside and outside of the institution.
+        % Management and tracking of institutional alliances with other non-profits, education centers, youth groups, and both private and public community associations.
+        % Planning and delivery of education activities for people with contact and influence over youth, e.g. teachers, parents, medics, nurses, youth leaders and other adults of influence.
+
+        \cventry{Feb-Ago,~2017}{teleSUR, La nueva televisión del sur,~C.A}{Redactor Web}{}{}{}
         \cvlistitem{Redacción de artículos de investigación sobre eventos históricos.}
         \cvlistitem{Redacción de contenidos para la página web del canal.}
         \cvlistitem{Resumen de acontecimientos noticiosos.}
         \cvlistitem{Elaboración de notas informativas sobre entrevistas.}
         \cvlistitem{Creación de notas promocionales para la programación del canal.}
 
-        \cventry{2015-2016}{Kavanayentech~C.A.}{Consultor de tecnología en implementación de APIA~Documentum}{}{}{}
+        \cventry{2015-2017}{Kavanayentech~C.A.}{Consultor de tecnología en implementación de APIA~Documentum}{}{}{}
         \cvlistitem{Consultoría psicológica en adopción de tecnologías de la información en la administración pública.}
         \cvlistitem{Consultoría y supervisión del equipo de implementación del paquete informático APIA~Documentum.}
         \cvlistitem{Elaboración y ejecución de talleres de entrenamiento al personal en el uso de tecnologías para trámites administrativos.}
@@ -102,7 +90,7 @@
 
 \newpage
 
-\section{Coordinación de proyectos}
+\section{Gestión de proyectos}
     \cvitem{2020}{Esperanza: Programa de formación de prestadores de servicios de salud en derechos y salud, sexual y reproductiva.}
     \cvitem{2018-2020}{Desarrollo de un modelo integral para la prevención y atención del síndrome por virus Zika en Venezuela: un enfoque desde la salud sexual y reproductiva.}
     \cvitem{2017-2018}{Háblalo: Visibilización y abordaje del estigma contra el aborto en Venezuela mediante mensajes audiovisuales.}

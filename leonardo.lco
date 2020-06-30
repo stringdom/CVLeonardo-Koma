@@ -1,0 +1,14 @@
+\ProvidesFile{leonardo.lco}
+
+\setkomavar{fromacadtitle}{Licenciado en Psicología}
+\setkomavar{fromfirstname}{Leonardo Rafael}
+\setkomavar{fromfamilyname}{Pérez Martínez}
+
+\setkomavar{fromaddresscity}{Caracas, Municipio Libertador}
+\setkomavar{fromaddressstreet}{Av.~Intercomunal de Antímano con Calle~El~Carmen}
+
+\setkomavar{fromemail}{leo.prez.k@gmail.com}
+\setkomavar{frommobilephone}{+58 416 4272880}
+\setkomavar{fromphone}{+58 212 4727982}
+\setkomavar{fromlinkedin}{\link[psic-leonardo-pérez]{www.linkedin.com/in/psic-leonardo-pérez}}
+\setkomavar{fromextrainfo}{\faSkype~\link[Stringdom42]{https://join.skype.com/invite/xzSFqvGk6nBK}}
