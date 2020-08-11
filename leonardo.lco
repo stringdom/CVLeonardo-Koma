@@ -10,5 +10,5 @@
 \setkomavar{fromemail}{leo.prez.k@gmail.com}
 \setkomavar{frommobilephone}{+58 416 4272880}
 \setkomavar{fromphone}{+58 212 4727982}
-\setkomavar{fromlinkedin}{\link[psic-leonardo-pérez]{www.linkedin.com/in/psic-leonardo-pérez}}
-\setkomavar{fromextrainfo}{\faSkype~\link[Stringdom42]{https://join.skype.com/invite/xzSFqvGk6nBK}}
+\setkomavar{fromlinkedin}{\httpslink[psic-leonardo-pérez]{www.linkedin.com/in/psic-leonardo-pérez}}
+\setkomavar{fromextrainfo}{\faSkype~\httpslink[Stringdom42]{join.skype.com/invite/xzSFqvGk6nBK}}
