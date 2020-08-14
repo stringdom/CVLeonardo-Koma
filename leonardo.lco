@@ -1,6 +1,6 @@
 \ProvidesFile{leonardo.lco}
 
-\setkomavar{fromacadtitle}{Licenciado en Psicología}
+\setkomavar{fromacadtitle}{Degree in psychology}
 \setkomavar{fromfirstname}{Leonardo Rafael}
 \setkomavar{fromfamilyname}{Pérez Martínez}
 
