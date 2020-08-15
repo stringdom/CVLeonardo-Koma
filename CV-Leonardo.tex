@@ -1,6 +1,7 @@
 % Implementación de un CV en el formato de KOMA-description
 \documentclass[xcolor=svgnames,color=DarkSlateGray,draft=false]{komacv}
-\usepackage{komacv-addons, komacv-lco, fontspec}
+\usepackage{komacv-addons, komacv-lco, fontspec, microtype}
+\usepackage[all]{nowidow}
 \KOMAoptions{fromemail=true, fromextrainfo=true, fromlinkedin=true, frommobilephone=true, fromphone=true}
 \LoadLetterOption{leonardo}
 \photo[mframe]{0.2\textwidth}{foto.jpg}
@@ -12,103 +13,97 @@
 \ofoot{\pagemark/\totalpagemark}
 
 \begin{document}
+\raggedbottom
+
 \maketitle
 
-\section{Professional information}
-\subsection{Profile}
-\raggedright
-    Psicólogo social con conocimiento avanzado de informática. Diseñador y gestor de proyectos de incidencia social. Redactor y editor de textos técnicos, manuales, y contenido instruccional y promocional para redes sociales. Orador experimentado. Facilitador de grupos y talleres con conocimiento en evaluación basada en competencias. Especialista en educación, derechos, y salud sexual y reproductiva.
-% \subsection{Habilidades}
-% \raggedright
-%     Experiencia en diseño e implementación de proyectos. Planificacion, diseño curricular, monitoreo de indicadores de desempeño, control y ejecución de presupuestos, reporte financiero y narrativo de resultados. Manejo, formación y facilitación de grupos. Capacidad para gestión, organización, supervisión, y manejo de personal y equipos de trabajo, así como de grupos de advocacy.
+\section{Professional profile}
+\justifying
+    Social psychologist with advanced computer skills. Design and management of social incidence projects. Experienced speaker. Expert on group dynamics, training and evaluation. Writer and editor of technical, promotional and instructional content with experience on online platforms. Specialized in sexual and reproductive rights, education and health.
+
+    Skills for budget management and performance indicators monitoring. Visual communication design, video and audio editing. Organization of groups of people and communications management. Experience with youth engagement, advocacy groups and social network communications.
 
 \section{Work experience}
-    % \subsection{Empleos}
-        \cventry{Nov,~2019-Current}{CEX/CIES}{Member of the technical committee of the center of excellence in comprehensive sexual education, Bolivia}{}{}{}
-        \cvlistitem{Validación de los contenidos educativos del curso online de Educación Integral en Sexualidad para prestadores de servicios de planificación familiar.}
-        \cvlistitem{Selección de una caja de herramientas para la EIS garantizando calidad del contenido.}
-        \cvlistitem{Coordinar la implementación del proyecto de participación y liderazgo juvenil.}
-        \cvlistitem{Realizar consultoría a los miembros del centro de excelencia en temas de salud y derechos sexuales y reproductivos.}
-        \cvlistitem{Participar en las reuniones remotas del comité técnico.}
+\raggedright
+    \cventry{Nov,~2019-Current}{CEX/CIES}{Member of the technical committee of the center of excellence in comprehensive sexual education, Bolivia}{}{}{Volunteer role.}
+        \cvlistitem{Validation of educational content for the online comprehensive sex education course for family planning services providers.}
+        \cvlistitem{Selection of a CSE toolbox with quality educational content.}
+        \cvlistitem{Monitoring youth engagement and participation projects.}
+        \cvlistitem{Consultorship for the center of excellence members on sexual and reproductive health and rights issues.}
+        \cvlistitem{Remote participation on the tecnical committee assemblies.}
 
-        \newpage
+    \cventry{Sep,~2017-Current}{PLAFAM,~A.C}{Program specialist for youth and adolescents engagement}{}{}{}
+        \cvlistitem{Social projects management for youth and adolescents engagement and participation, promotion of comprehensive sex education, family planning and empowerment on sexual and reproductive health and rights.}
+        \cvlistitem{Organization of youth volunteer activist group “Plafam Juvenil”.}
+        \cvlistitem{Promoting and managing youth participation inside and outside of the organization.}
+        \cvlistitem{Management and tracking of institutional alliances with other non-profits, education centers, youth groups, and both private and governtment community associations.}
+        \cvlistitem{Planning and delivery of education activities for people with contact and influence over youth, e.g. teachers, parents, medics, nurses, youth leaders and other adults of influence.}
 
-        \cventry{Sept,~2017-Current}{PLAFAM,~A.C}{Program specialist for youth and adolescents engagement}{}{}{}
-        \cvlistitem{Gestión de proyectos sociales para la participación de jóvenes y adolescentes en iniciativas de promoción de la EIS, planificación familiar y empoderamiento en los derechos sexuales y reproductivos, incluyendo reporte programático y seguimiento presupuestario.}
-        \cvlistitem{Liderazgo y coordinación del grupo de voluntariado Plafam Juvenil.}
-        \cvlistitem{Promoción de la participación de los jóvenes dentro y fuera de la institución.}
-        \cvlistitem{Gestión de alianzas con instituciones hermanas, centros educativos, grupos juveniles, instituciones comunitarias públicas y privadas.}
-        \cvlistitem{Ejecución de actividades formativas para personas con incidencia en jóvenes, como docentes, representantes, médicos, enfermeras, líderes juveniles y otros adultos significativos.}
+    \cventry{Feb-Aug,~2017}{teleSUR, La nueva televisión del sur,~C.A}{Web content writer}{}{}{}
+        \cvlistitem{Writer of research articles on historical and current events.}
+        \cvlistitem{Writer of content for the channel's web page.}
+        \cvlistitem{Summary of news events.}
+        \cvlistitem{Creation of informative notes of interviews.}
+        \cvlistitem{Writing, design and scheduling of promotional notes for the channel's programming grid.}
 
-        % Social projects implementation in youth and adolescents participation. Promotion of comprehensive sex education, family planning and empowerment on sexual and reproductive health and rights.
-        % Organization of youth volunteer group Plafam Juvenil.
-        % Promoting and organizing youth participation inside and outside of the institution.
-        % Management and tracking of institutional alliances with other non-profits, education centers, youth groups, and both private and public community associations.
-        % Planning and delivery of education activities for people with contact and influence over youth, e.g. teachers, parents, medics, nurses, youth leaders and other adults of influence.
+    \cventry{2015-2017}{Kavanayentech~C.A.}{APIA~Documentum tehcnology implementation consultant}{}{}{}
+        \cvlistitem{Psychology consultant on change management and technology adoption in the public administration.}
+        \cvlistitem{APIA~Documentum implementation and development team oversight.}
+        \cvlistitem{Design and implementation of trainig workshop for public administration staff on the use of informatic technologies.}
+        \cvlistitem{Design and management of a technology adoption plan and change management for the use of the APIA~Documentum software package in public administration.}
+        \cvlistitem{Design, application and analysis of technology adoption and organization change assestment instruments.}
 
-        \cventry{Feb-Ago,~2017}{teleSUR, La nueva televisión del sur,~C.A}{Web content writer}{}{}{}
-        \cvlistitem{Redacción de artículos de investigación sobre eventos históricos.}
-        \cvlistitem{Redacción de contenidos para la página web del canal.}
-        \cvlistitem{Resumen de acontecimientos noticiosos.}
-        \cvlistitem{Elaboración de notas informativas sobre entrevistas.}
-        \cvlistitem{Creación de notas promocionales para la programación del canal.}
+    \cventry{2010-2015}{IBM de Venezuela~C.A.}{‘Business innovation center’ operator}{}{}{}
+        \cvlistitem{Monitoring informatic processes on the national interbaking network.}
+        \cvlistitem{Detection, management and monitoring of the platform incidents.}
+        \cvlistitem{Execution of routine and maintenance processes.}
+        \cvlistitem{Scheduling and executing routine maintenance of datacenter computer equipment.}
+        \cvlistitem{Assistance to software developers and datacenter's technical maintenance staff.}
+\enlargethispage{2\baselineskip}
+    \cventry{2010-2011}{The Adecco Group Venezuela—Banco Mercantil}{Help-desk analyst}{}{}{}
+        \cvlistitem{Provided technical informatic support for Mercantil Bank staff.}
+        \cvlistitem{Friendly and comprehensive customer call reception.}
+        \cvlistitem{Monitoring and management of technical support tickets.}
+        \cvlistitem{Tecnical assistance to administrative informatic processes.}
+        \cvlistitem{Effective remote support for tecnical malfunctions.}
 
-        \cventry{2015-2017}{Kavanayentech~C.A.}{APIA~Documentum tehcnology implementation consultant}{}{}{}
-        \cvlistitem{Consultoría psicológica en adopción de tecnologías de la información en la administración pública.}
-        \cvlistitem{Consultoría y supervisión del equipo de implementación del paquete informático APIA~Documentum.}
-        \cvlistitem{Elaboración y ejecución de talleres de entrenamiento al personal en el uso de tecnologías para trámites administrativos.}
-        \cvlistitem{Elaboración y ejecución de un plan de adopción de la tecnología APIA~Documentum para el personal de administración pública.}
-        \cvlistitem{Creación y aplicación de instrumentos de evaluación de la adopción de nuevas tecnologías.}
-
-        \cventry{2010-2015}{IBM de Venezuela~C.A.}{‘Business innovation center’ operator}{}{}{}
-        \cvlistitem{Monitoreo de los procesos informáticos de la plataforma interbancaria nacional.}
-        \cvlistitem{Registro y seguimiento de incidencias y eventos de la plataforma.}
-        \cvlistitem{Ejecución de procesos informáticos de rutina y mantenimiento.}
-        \cvlistitem{Ejecución de tareas de rutina en los equipos informáticos del datacenter.}
-        \cvlistitem{Asistencia al personal desarrollador de software y al equipo técnico de mantenimiento del datacenter.}
-
-        \cventry{2010-2011}{The Adecco Group Venezuela—Banco Mercantil}{Help-desk analyst}{}{}{}
-        \cvlistitem{Soporte técnico informático para el personal administrativo del Banco Mercantil.}
-        \cvlistitem{Recepción de llamadas de soporte.}
-        \cvlistitem{Seguimiento a eventos de soporte técnico.}
-        \cvlistitem{Asistencia en la ejecución de procesos informáticos administrativos.}
-        \cvlistitem{Soporte remoto de incidencias informáticas.}
-
-\section{Educación}
+\section{Education}
     \cventry{2018}{Degree in Psychology, specializing in Social Psychology}{Universidad Central de Venezuela}{}{Equivalent to bachelor's degree}{}
-    % \cventry{2005}{Bachiller en Ciencias}{U.E.N. Rafael Seijas}{}{}{}
 
-    \subsection{Software}
-        \cvitem{Microsoft Office}{Manejo avanzado de Word, Excel, PowerPoint, y Project. Conocimientos básicos de Access.}
-        \cvitem{RStudio}{Análisis básico de datos estadísticos con el paquete Tidyverse en el lenguaje de análisis R.}
-        \cvitem{Git}{Gestión avanzada de control de versiones y trabajo colaborativo en la nube.}
-        \cvitem{\LaTeX Typesetting software}{Elaboración avanzada y automatizada de documentos de alta calidad tipográfica.}
+    \subsection{Software skills}
+        \cvitem{Microsoft Office}{Advanced use of Word, Excel, PowerPoint, and Project.}
+        \cvitem{HitFilm Express}{Video editing, color correction and sound synchronization.}
+        \cvitem{Reaper DAW}{Advanced edition of audio, musical composition and mixing, noise reduction and effects processing.}
+        \cvitem{Adobe Photoshop}{Image editing, photographic composition, correction and design.}
+        \cvitem{Git}{Advanced version management and collaborative remote work.}
+        \cvitem{\LaTeX Typesetting software}{Advanced and automated creation of high typographic quality documents.}
 
-    \subsection{Idiomas}
-        \cvitem{Español}{Native.}
-        \cvitem{Inglés}{Fluidez en lectura, escritura y conversación.}
+    \subsection{Languages}
+        \cvitem{Spanish}{Native.}
+        \cvitem{English}{Fluent reading, writing and speaking skills.}
 
-\newpage
+\section{Project management}
+    \cvitem{Mar-2020}{Training health care providers in sexual and reproductive rights and health.}
+    \cvitem{May-2020}{Virtual trainig route on youth sexuality for teenage girls.}
+    \cvitem{July-2020}{Promoting friendly comprehensive sexual and reproductive health care for adolescents in the state of Miranda, Venezuela during the Covid-19 pandemic.}
+    \cvitem{2018-2020}{Developing an integral model for attention and prevention of the Zika virus syndrome: a sexual and reproductive health approach.}
+    \cvitem{2017-2018}{“Háblalo”: raising awareness and facing stigma against abortion in Venezuela through audio-visual messages.}
+    \cvitem{2016-2017}{“Cero prejuicios, PLAFAM habla contigo”: promotion of comprehensive sex education inside schools of Caracas, Venezuela.}
+    \cvitem{2015-2016}{APIA~Documentum: Pilot implementation for digital certification processes of ID documents in SAREN's Caracas main registry.}
 
-\section{Gestión de proyectos}
-    \cvitem{2020}{Esperanza: Programa de formación de prestadores de servicios de salud en derechos y salud, sexual y reproductiva.}
-    \cvitem{2018-2020}{Desarrollo de un modelo integral para la prevención y atención del síndrome por virus Zika en Venezuela: un enfoque desde la salud sexual y reproductiva.}
-    \cvitem{2017-2018}{Háblalo: Visibilización y abordaje del estigma contra el aborto en Venezuela mediante mensajes audiovisuales.}
-    \cvitem{2016-2017}{Cero prejuicios, PLAFAM habla contigo: avance de la educación integral en sexualidad en liceos de Caracas, Venezuela.}
-    \cvitem{2015-2016}{APIA~Documentum: Prueba piloto para la digitalización de procesos de legalización de documentos de identidad con énfasis en ‘cero papel’ en el Registro Principal de Caracas del SAREN.}
-
-\section{Referencias laborales}
+\section{Personal references}
+\enlargethispage{2\baselineskip}
         \begin{compactdesc}
-                \item{Nelmary Diaz — }{\em Gerente de programas, PLAFAM, A.C.}
+                \item{Nelmary Diaz — }{\em Program manager, PLAFAM, A.C.}
                 \item{\bfseries Email:} \emaillink{ndiaz@plafam.org.ve}
-                \item{\bfseries Teléfono:} +58 412 954 9116 / +58 212 634 0177
+                \item{\bfseries Phone:} +58 412 954 9116 / +58 212 634 0177
         \end{compactdesc}
 
 \medskip
 
         \begin{compactdesc}
-                \item{Gustavo Torres — }{\em Fundador y director ejecutivo, Kavanayentech, C.A.}
+                \item{Gustavo Torres — }{\em Founder and executive director, Kavanayentech, C.A.}
                 \item{\bfseries Email:} \emaillink{gtorres@kavanayentech.com}
-                \item{\bfseries Teléfono:} +1 786 487 7791
+                \item{\bfseries Phone:} +1 786 487 7791
         \end{compactdesc}
 \end{document}
