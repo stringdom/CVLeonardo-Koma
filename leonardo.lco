@@ -1,6 +1,7 @@
 \ProvidesFile{leonardo.lco}
 
-\setkomavar{fromacadtitle}{Psychologist-Social psychology}
+%\setkomavar{fromacadtitle}{Psychologist-Social psychology}
+\setkomavar{fromacadtitle}{Psicólogo social}
 \setkomavar{fromfirstname}{Leonardo Rafael}
 \setkomavar{fromfamilyname}{\\Pérez Martínez}
 
